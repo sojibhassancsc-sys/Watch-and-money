@@ -1,0 +1,39 @@
+name: watch_earn_app
+description: "ভিডিও দেখে আয় করার অ্যাপ — Watch-to-Earn"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Ad networks
+  google_mobile_ads: ^5.1.0
+  # Start.io Flutter plugin — official package name; verify latest on pub.dev before build
+  startapp_sdk: ^2.0.0
+
+  # State management
+  provider: ^6.1.2
+
+  # Local storage (wallet balance, streak, settings cached on-device)
+  shared_preferences: ^2.2.3
+
+  # Networking (talk to your backend API)
+  http: ^1.2.1
+
+  # Env config (keep Ad IDs out of source control)
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
